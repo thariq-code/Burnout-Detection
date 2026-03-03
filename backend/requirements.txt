@@ -1,3 +1,5 @@
+setuptools==68.2.2
+wheel==0.41.2
 Flask==2.3.3
 Flask-Cors==4.0.0
 pymongo==4.6.0
