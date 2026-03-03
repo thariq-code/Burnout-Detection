@@ -19,7 +19,7 @@ function render() {
 function renderLogin() {
     app.innerHTML = `
         <div class="auth-container glass-card">
-            <h1>🚀 Burnout Sentinel</h1>
+            <h1>🚀 Burnout Detection</h1>
             <div style="display: flex; flex-direction: column; gap: 20px;">
                 <input type="email" id="email" class="input-neon" placeholder="Email" />
                 <input type="password" id="password" class="input-neon" placeholder="Password" />
@@ -92,7 +92,7 @@ function renderDashboard() {
     app.innerHTML = `
         <div class="dashboard">
             <div class="dashboard-header glass-card">
-                <div class="logo">🧠 Burnout Sentinel</div>
+                <div class="logo">🧠 Burnout Detection</div>
                 <div style="display: flex; gap: 15px;">
                     <input type="text" id="github-username" class="input-neon" placeholder="GitHub username" style="width: 250px;" />
                     <button class="btn-neon" onclick="analyze()">Analyze</button>
@@ -126,7 +126,7 @@ function renderDashboard() {
             </div>
 
             <div class="footer">
-                <p>© 2026 Burnout Sentinel – AI-Powered Developer Wellness</p>
+                <p>© 2026 Burnout Detection – AI-Powered Developer Wellness</p>
                 <p>
                     <a href="#">Privacy</a> • <a href="#">Terms</a> • <a href="#">Contact</a>
                 </p>

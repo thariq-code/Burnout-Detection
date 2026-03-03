@@ -1,6 +1,6 @@
-# Burnout Sentinel – AI-Powered Developer Burnout Detection
+# Burnout Detection – AI-Powered Developer Burnout Detection
 
-Burnout Sentinel analyzes GitHub commit patterns to predict developer burnout risk using machine learning. Built with Flask, MongoDB Atlas, and a modern 3D SaaS frontend.
+Burnout Detection analyzes GitHub commit patterns to predict developer burnout risk using machine learning. Built with Flask, MongoDB Atlas, and a modern 3D SaaS frontend.
 
 ## Features
 - 🔐 JWT Authentication
