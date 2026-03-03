@@ -14,4 +14,4 @@ Burnout Detection analyzes GitHub commit patterns to predict developer burnout r
 2. **Create a virtual environment** with Python 3.10.13
 3. **Install dependencies**:
    ```bash
-   pip install -r backend/requirements.txt
+   pip install -r requirements.txt

@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 from datetime import datetime
 
-from .database import users_collection, predictions_collection
+from database import users_collection, predictions_collection
 import auth
 import middleware
 import github_fetcher
@@ -14,7 +14,7 @@ from sentiment import get_sentiment
 
 load_dotenv()
 
-app = Flask(__name__, static_folder="../frontend/static", template_folder="../frontend/templates")
+app = Flask(__name__, static_folder="frontend/static", template_folder="frontend/templates")
 app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY")
 CORS(app)
 
