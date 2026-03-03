@@ -2,7 +2,7 @@ import jwt
 import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask import current_app
-from database import users_collection
+from .database import users_collection
 
 def register_user(email, password):
     if users_collection.find_one({"email": email}):

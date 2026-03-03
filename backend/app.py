@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 from datetime import datetime
 
-from database import users_collection, predictions_collection
+from .database import users_collection, predictions_collection
 import auth
 import middleware
 import github_fetcher
