@@ -13,7 +13,14 @@ _model = None
 def load_model():
     global _model
     if _model is None:
-        _model = joblib.load(MODEL_PATH)
+        try:
+            _model = joblib.load(MODEL_PATH)
+        except FileNotFoundError:
+            # If model doesn't exist, create a default one
+            print("Model not found, training a new one...")
+            import subprocess
+            subprocess.run(["python", "train_model.py"], check=True)
+            _model = joblib.load(MODEL_PATH)
     return _model
 
 def predict_burnout(features_dict):

@@ -18,8 +18,7 @@ app = Flask(__name__, static_folder="frontend/static", template_folder="frontend
 app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY")
 CORS(app)
 
-# Ensure model is loaded at startup
-ml_model.load_model()
+# Model loading is now lazy - loads only when predict_burnout is called
 
 # -------------------- Routes --------------------
 @app.route("/")
