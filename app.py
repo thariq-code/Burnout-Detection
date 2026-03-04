@@ -12,6 +12,12 @@ import feature_engineering
 import model as ml_model
 from sentiment import get_sentiment
 
+# Reduce TensorFlow logging and disable GPU discovery before any TF import
+# 0 = all logs, 1 = INFO, 2 = WARNING, 3 = ERROR. Setting to '2' hides INFO messages.
+os.environ.setdefault("TF_CPP_MIN_LOG_LEVEL", "2")
+# Prevent TensorFlow from attempting to use GPUs (avoids CUDA driver messages)
+os.environ.setdefault("CUDA_VISIBLE_DEVICES", "")
+
 load_dotenv()
 
 app = Flask(__name__, static_folder="frontend/static", template_folder="frontend/templates")
